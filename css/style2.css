@@ -1,0 +1,55 @@
+body {
+  margin:0;
+  width:100vw;
+  background-color: lightgrey;
+}
+
+.blog-entries{
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+h1{
+  background-color: navy;
+  color: white;
+  margin-bottom: 0;
+}
+
+h2{
+  text-align: left;
+}
+
+.toolbar{
+  background-color: red;
+  text-align: justify;
+  width: 100%;
+}
+
+a:link{
+  text-decoration: none;
+  color: #000;
+}
+
+a:active{
+  color: #000;
+}
+
+a:visited{
+  color:black;
+}
+
+#post-image{
+  width: 175px;
+  height: 100px;
+}
+
+.story{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+.title-block{
+  padding-left: 20px;
+}

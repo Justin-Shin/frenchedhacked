@@ -32,14 +32,16 @@ nav {
   padding-top:5vh;
   z-index: 1;
 }
+
 .name {
-  position:fixed;
+  position: fixed;
   left:20vw;
   top:-7px;
   font-size: 4.5vh;
   padding-left:10px;
   color:gray;
 }
+
 .contentcontainer{
   width:864px;
   display:flex;
@@ -125,4 +127,46 @@ p.boxy.hover:hover {
 }
 p.boxy.hover:hover > small {
   opacity:1;
+}
+
+.main {
+margin-top: 50px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.aside {
+  margin-top: 100px;
+  width: 55%;
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+}
+
+.feed{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box {
+  text-align: center;
+  width: 95%;
+  height: 250px;
+  background-color: hsla(0, 6%, 0%, 0.14);
+  margin: 15px 5px 15px 5px;
+}
+
+.boxfeed {
+  text-align: center;
+  width: 95%;
+  height: 200px;
+  margin: 15px 5px 15px 5px;
+}
+
+.fixed {
+  display:none;
 }
