@@ -1,0 +1,128 @@
+body {
+  margin:0;
+  width:100vw;
+  background-color: lightgrey;
+}
+header {
+  margin:0 auto;
+  width:864px;
+  background-color: rgba(255,255,255,.9);
+  height: 5vh;
+}
+nav {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+.nav{
+  margin: 5px;
+  color: gray;
+  height:100%;
+  width:10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolbarimage{
+  height:100%;
+}
+.toolbarimage:hover{
+  height:200%;
+  padding-top:5vh;
+  z-index: 1;
+}
+.name {
+  position:fixed;
+  left:20vw;
+  top:-7px;
+  font-size: 4.5vh;
+  padding-left:10px;
+  color:gray;
+}
+.contentcontainer{
+  width:864px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin:0 auto;
+}
+.carousel1 {
+  width: 864px;
+  height: 500px;
+  background-image:url("http://www.history.com/images/media/video/history_deconstructed_eiffel_tower_sf_1184442/History_Deconstructed_Eiffel_Tower_SF_still_624x352.jpg");
+  background-size: cover;
+  background-color:red;
+
+}
+div>img{
+  width:100%;
+  height:100%;
+  vertical-align:  bottom;
+}
+.tiles {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width:864px;
+  margin-top: -25px;
+  z-index: 1;
+
+}
+.tile {
+  width:415px;
+  background-color: white;
+  height:415px;
+  margin:5px;
+  display:flex;
+  /*justify-content: flex-end;*/
+  align-items: flex-end;
+  background-size:cover;
+  overflow: hidden;
+}
+
+.innertile {
+  width:370px;
+  height:370px;
+  z-index: 1;
+  background-color: rgba(255,255,255,.75);
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 20px;
+}
+
+p.boxy {
+  /*a lot of this is taken from the Dash exercise we did for prework*/
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 15%;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+p.boxy > small {
+  opacity:0;
+  margin:5px;
+}
+p.boxy a:hover{
+  color: cyan;
+  text-decoration:none;
+}
+p.boxy.hover:hover {
+  height: 100%;
+}
+p.boxy.hover:hover > small {
+  opacity:1;
+}
